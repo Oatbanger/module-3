@@ -1,1 +1,4 @@
-# module-3
+# Password generator challenge
+
+##Purpose
+
