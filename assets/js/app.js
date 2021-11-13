@@ -1,23 +1,31 @@
 // Assignment code here
-
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
+var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+var speacialChars = ["`", "`", "!", "@", "#", "$", "%", "^", "&", "*", "+", "?"];
+var password = "";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
-function generatePassword () {
+function generatePasswordLength () {
   // window prompt to set length
- var password = window.prompt("How many characters would you like your password to contain?")
-  console.log (password);
-   //validate answer
-   if (password > 7 && password < 129) {
+  var password = window.prompt("How many many characters will be in the password?")
+    if (password > 7 && password < 129) { 
+      console.log (password);
      //generate password function
-     function foo () {};
-   }
+     
+       for (var i=0;i<password.length; i++ ){
+         console.log(password)
+       }
+     }
+  
      // try again
     else {
       window.alert("Please enter a valid number between 8 and 128")
-      generatePassword();
-      ;
+      return generatePasswordLength();
+    
     }
+  
    
   // window confirm to set lower case type
   var caseTypeLower = window.confirm("Include lower case?")
